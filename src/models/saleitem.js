@@ -137,6 +137,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
+      tableName: 't_sales_det',
       modelName: 'SaleItem',
     }
   );

@@ -33,6 +33,16 @@ module.exports = (sequelize, DataTypes) => {
           },
         },
       },
+      tgl: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        validate: {
+          notNull: {
+            args: true,
+            msg: 'Tanggal is required',
+          },
+        },
+      },
       cust_id: {
         type: DataTypes.INTEGER,
         allowNull: false,

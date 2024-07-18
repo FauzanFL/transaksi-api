@@ -10,9 +10,13 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       kode: {
-        type: Sequelize.STRING(10),
+        type: Sequelize.STRING(12),
         unique: true,
         allowNull: false,
+      },
+      tgl: {
+        allowNull: false,
+        type: Sequelize.DATE,
       },
       cust_id: {
         type: Sequelize.INTEGER,
