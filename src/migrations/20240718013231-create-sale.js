@@ -29,19 +29,19 @@ module.exports = {
         onDelete: 'CASCADE',
       },
       subtotal: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       diskon: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       ongkir: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       total_bayar: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       createdAt: {

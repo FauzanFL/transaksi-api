@@ -128,6 +128,7 @@ class SaleController {
 
       const sale = await Sale.create(saleData);
 
+      console.log(items);
       const saleItems = items.map((item) => {
         return { sales_id: sale.id, ...item };
       });

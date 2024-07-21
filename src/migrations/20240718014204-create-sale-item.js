@@ -30,7 +30,7 @@ module.exports = {
         onDelete: 'CASCADE',
       },
       harga_bandrol: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       qty: {
@@ -38,15 +38,15 @@ module.exports = {
         allowNull: false,
       },
       diskon_nilai: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       harga_diskon: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       total: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL(10, 2),
         allowNull: false,
       },
       createdAt: {
