@@ -28,8 +28,6 @@ class UserController {
   async isLogin(req, res) {
     if (req.user) {
       res.status(200).send({ user: req.user, message: 'User is logged in' });
-    } else {
-      res.status(401).send({ message: 'User has not logged in' });
     }
   }
 }

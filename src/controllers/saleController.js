@@ -139,6 +139,17 @@ class SaleController {
       res.status(500).json({ message: error.message });
     }
   }
+
+  async deleteSale(req, res) {
+    const { id } = req.params;
+    try {
+      await Sale.destroy({ where: { id } });
+
+      res.status(200).json({ message: 'Sales delete successful' });
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  }
 }
 
 module.exports = SaleController;
