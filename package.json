@@ -5,6 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js",
+    "prebuild": "npx sequelize-cli --config src/config/config.js --migrations-path src/migrations db:migrate",
+    "seed": "npx sequelize-cli --config src/config/config.js --seeders-path src/seeders db:seed:all",
     "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
