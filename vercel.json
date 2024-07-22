@@ -9,7 +9,15 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "src/app.js"
+            "dest": "src/app.js",
+            "method": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE",
+                "PATCH",
+                "OPTIONS"
+            ]
         }
     ]
 }
