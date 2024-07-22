@@ -1,4 +1,5 @@
 require('dotenv').config({ path: __dirname + '/../../.env' });
+const mysql2 = require('mysql2');
 const {
   DB_USERNAME,
   DB_PASSWORD,
@@ -19,6 +20,7 @@ module.exports = {
     database: DB_NAME,
     host: DB_HOST,
     dialect: DB_DIALECT,
+    dialectModule: mysql2,
   },
   test: {
     username: DB_USERNAME,
@@ -26,6 +28,7 @@ module.exports = {
     database: DB_NAME,
     host: DB_HOST,
     dialect: DB_DIALECT,
+    dialectModule: mysql2,
   },
   production: {
     username: DB_PROD_USERNAME,
@@ -33,5 +36,6 @@ module.exports = {
     database: DB_PROD_NAME,
     host: DB_PROD_HOST,
     dialect: DB_PROD_DIALECT,
+    dialectModule: mysql2,
   },
 };
