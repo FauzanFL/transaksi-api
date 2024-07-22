@@ -5,7 +5,6 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js",
-    "prebuild": "npm run migrate && npm run seed",
     "migrate": "npx sequelize-cli --config src/config/config.js --migrations-path src/migrations db:migrate",
     "seed": "npx sequelize-cli --config src/config/config.js --seeders-path src/seeders db:seed:all",
     "start": "node src/app.js",
