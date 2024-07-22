@@ -3,8 +3,7 @@
     "builds": [
         {
             "src": "src/app.js",
-            "use": "@vercel/node",
-            "post_build": "npm run seed"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
